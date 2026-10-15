@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-15 Asia/Shanghai",
+  "scope": "Bounded read-only analysis of the verified OpenNI orbbec.dll, shipped public headers and one documented DepthIrMode GET probe. No mode SET, unknown write command, source edits or original DLL changes.",
+  "subject": {
+    "sha256": "bd08e87378eba3342f892c5d9cf00af1dfbf674ef46cec3812ebec0d669d1245",
+    "image_base": "0x180000000",
+    "provider": "REA Linux / Ghidra 12.1.4",
+    "analysis_profile_digest": "2f8e96b5753c9076371d59a3c3682f610a66fa4834dc6dc5f556e707a6b8c2cf",
+    "evidence_bundle": "ir_metadata_analysis_evidence.json"
+  },
+  "public_frame_api": {
+    "header": "openni_include/OniCTypes.h",
+    "sha256": "275de00fb41a970f2a991ceae5d6bac5bb2eaf118d8e37685cb6aea98508b268",
+    "OniFrame_x64_fields": [
+      {
+        "offset": 0,
+        "type": "int32",
+        "name": "dataSize"
+      },
+      {
+        "offset": 8,
+        "type": "pointer",
+        "name": "data"
+      },
+      {
+        "offset": 16,
+        "type": "enum32",
+        "name": "sensorType"
+      },
+      {
+        "offset": 24,
+        "type": "uint64",
+        "name": "timestamp"
+      },
+      {
+        "offset": 32,
+        "type": "int32",
+        "name": "frameIndex"
+      },
+      {
+        "offset": 36,
+        "type": "int32",
+        "name": "width"
+      },
+      {
+        "offset": 40,
+        "type": "int32",
+        "name": "height"
+      },
+      {
+        "offset": 44,
+        "type": "OniVideoMode16",
+        "name": "videoMode"
+      },
+      {
+        "offset": 60,
+        "type": "OniBool32",
+        "name": "croppingEnabled"
+      },
+      {
+        "offset": 64,
+        "type": "int32",
+        "name": "cropOriginX"
+      },
+      {
+        "offset": 68,
+        "type": "int32",
+        "name": "cropOriginY"
+      },
+      {
+        "offset": 72,
+        "type": "int32",
+        "name": "stride"
+      }
+    ],
+    "size_bytes": 80,
+    "conclusion": "The public frame struct has no emitter-at-exposure, floodlight state, laser state, exposure start/duration or frame illumination tag. Frame data remains pixel data; no public metadata pointer is present."
+  },
+  "stream_packet_header": {
+    "usb_parser": "0x18001FBF0",
+    "usb_parser_evidence_id": "ev_4d7f2263dc202893ec0ba4e403415214849d92a8e2b79ecd8d389a8b2979c331",
+    "header_size_bytes": 12,
+    "fields_observed_by_consumers": [
+      {
+        "offset": 0,
+        "bytes": 2,
+        "name": "stream magic",
+        "observation": "Parser matches word against firmware context+0x10E; not an illumination flag."
+      },
+      {
+        "offset": 2,
+        "bytes": 2,
+        "name": "packet type",
+        "observation": "Firmware dispatcher and frame processor dispatch on this word."
+      },
+      {
+        "offset": 4,
+        "bytes": 2,
+        "name": "packet sequence ID",
+        "observation": "XnDataProcessor checks consecutiveness. It is not the public frameIndex."
+      },
+      {
+        "offset": 6,
+        "bytes": 2,
+        "name": "packet byte size / payload size",
+        "observation": "USB parser byte-swaps this size and subtracts12, then stores payload length in the working header."
+      },
+      {
+        "offset": 8,
+        "bytes": 4,
+        "name": "raw device timestamp ticks",
+        "observation": "EOF passes this DWORD to a timestamp conversion routine; exact exposure moment semantics are not established."
+      }
+    ],
+    "unknown_fields_within_recognized_header": [],
+    "limit": "Names are derived from reads and control flow. Byte order differs by field; packet type constants are the host-observed values read by this DLL. Unknown payload or sensor-specific extensions outside these12bytes remain possible.",
+    "firmware_dispatcher": "0x180021D60",
+    "firmware_dispatcher_evidence_id": "ev_e20f01943cd524995a97a941e6576eb09011632119f6b8c05012e85e84bcedf6",
+    "frame_processor": "0x180022720",
+    "frame_processor_evidence_id": "ev_1d6ba9903cd20ee0419fe35d0b5af0fbe9a401d36ddf43b9af0458f41c0938eb",
+    "ir_constructor": "0x180032ED0",
+    "ir_constructor_evidence_id": "ev_ad23e19473459da855d35698b3615d307dcd09ca347c9286827954f37edb07b8",
+    "ir_start_type": "0x8100",
+    "ir_end_type": "0x8500",
+    "conclusion": "Recognized header and normal IR packet processing do not extract emitter or floodlight state at exposure. Packet sequence parity must not be interpreted as illumination parity."
+  },
+  "ir_pixel_pipeline": {
+    "packed10_processor": "0x1800330A0",
+    "packed10_evidence_id": "ev_ad00e15baffb4e6d79351c905b0f07b0f31a5e7271cb3cd7353138c3aa92f625",
+    "packed10_semantics": "Five packed bytes are unpacked into four uint16 IR pixels; leftovers are buffered between packet chunks. No illumination flag is parsed in this handler.",
+    "uncompressed_processor": "0x180050DC0",
+    "uncompressed_evidence_id": "ev_5bb80b84b29c2b555ba70d35c4871907999e041d00688408d63dd4e5f2e06dcb",
+    "eof": "0x180033490",
+    "eof_evidence_id": "ev_1e7536fcb13f038930c65aa68f829652987fbf7388089bb6bdc8a3caadec7267",
+    "eof_semantics": "Populates OniFrame geometry, GRAY16 pixel format, sensorType, crop/stride; then delegates timestamp/frame delivery to the base frame processor.",
+    "unknown_extra_data": "Some resolution and processor-mode branches validate input height+8 rows or height-64 rows before setting output length to the configured height. The content/purpose of those extra rows was not decoded or captured. They must not be called emitter metadata without evidence, and metadata hidden outside the public output cannot yet be ruled out."
+  },
+  "frame_identity_and_timing": {
+    "buffer_manager": "0x18000B4A0",
+    "buffer_manager_evidence_id": "ev_033c02882ef17e4030ff464ac5c956b271c7289e8b463054b1ce1f2c300b9fb7",
+    "frame_index": "Buffer manager increments a host counter and writes OniFrame.frameIndex at offset32. This does not independently prove a sensor exposure sequence or illuminated/dark pattern.",
+    "eof_timestamp_assignment": "0x180022910",
+    "eof_timestamp_evidence_id": "ev_4ffbd7d26796becf4128f1c4e7aa992cb85bafe6333c62ddba4de7ba99ec0828",
+    "ir_timestamp_override": "0x180033E40",
+    "ir_timestamp_override_evidence_id": "ev_e0231385a36175863d9be053cd5aca4c6dd0f1bb0c1eac9ce34aa061c9a623ce",
+    "ir_timestamp_rule": "If qword[sensor+0x1A8A0] !=2, IR timestamp is host elapsed time from the first IR frame. When it equals2, raw header ticks are converted through0x18001B020. The meaning and runtime value of this controlling field were not established here.",
+    "device_timestamp_converter": "0x18001B020",
+    "device_timestamp_converter_evidence_id": "ev_66a4508004d57e73b80795542152bdf330cc7ba8c86561fa277b15ee40c10cd2",
+    "converter_rule": "Extends 32bit wraparound, establishes a device/host reference, divides by firmware clock frequency (float context+0x320), and performs sanity/resynchronization logic.",
+    "conclusion": "The exposed timestamp is not sufficient by itself to label the illumination at actual exposure. Host receipt timestamps and a separate emitter GET are not a proven synchronization link."
+  },
+  "documented_hardware_alternation_candidate": {
+    "header": "openni_include/PS1080.h",
+    "header_sha256": "8a19f8aa0a3fdf8f5642d8358dcbaee3fbf2f030ebc1ac3715b78d2caa444c39",
+    "property": "0x1080FFF0 XN_MODULE_PROPERTY_DEPTH_IR_MODE",
+    "enum": "OBDepthIrMode",
+    "documented_values": {
+      "0": "PROTOCOL_DEPTH_NIR: Depth + pure IR interleaving (USB device default mode)",
+      "1": "PROTOCOL_SPECKLE_IR: speckle IR",
+      "2": "PROTOCOL_NIR: floodlight (pure) IR",
+      "3": "PROTOCOL_IR_NIR: interleaved speckle IR and pure IR"
+    },
+    "setter_callback": "0x180042F50",
+    "setter_callback_bytes_evidence_id": "ev_bd54b5da4e626c9778aed5140ec42c9cc8b41778d8b92b8b67409440777d7281",
+    "setter_handler": "0x1800300E0",
+    "setter_handler_evidence_id": "ev_ec90cdb61cc68be436a5fe644c15a829e1dd718a1d7b8e9fe09e2ab3cb4f8b02",
+    "setter_layout": "fwctx=sensor+0x3330; opcode=word[fwctx+0x1C0]; DWORD mode payload; requestBytes=word[fwctx+0x110]+4.",
+    "getter_callback": "0x180042F60",
+    "getter_callback_evidence_id": "ev_8c99af841ab1c102139ab7b8f22899f47a07a53aefc4ef543026808264065e60",
+    "getter_handler": "0x1800301C0",
+    "getter_handler_evidence_id": "ev_f2177893dd55f665ec7605c85633dafb2115d0320a7725c7ad7c1ca58e21fbbe",
+    "getter_layout": "opcode=word[fwctx+0x1C2]; header-only request; expects2 reply words and copies the raw DWORD without boolean normalization.",
+    "support_status": "A real documented SDK path exists. Actual D2 firmware capability and illumination scheduling are not established by the header or property advertisement alone."
+  },
+  "one_authorized_read_probe": {
+    "script": "probe_depth_ir_mode_trace.py",
+    "trace": "depth_ir_mode_trace_20261015_005909_407269.jsonl",
+    "ownership": "Frida spawned an owned Python child, used the already-validated process allowlist fix, opened D2 and issued exactly one public DepthIrMode GET. No streams or explicit property SET.",
+    "precheck": "No test_background/test_capture/test_consumer/test_source_reader/virtual_camera_probe process was present.",
+    "context_set_opcode": 159,
+    "context_get_opcode": 160,
+    "control_header_bytes": 8,
+    "request_hex": "474d0000a0001000",
+    "sender_status": 0,
+    "reply_words": 0,
+    "getter_status": 65537,
+    "getter_status_hex": "0x10001",
+    "raw_mode": null,
+    "conclusion": "The firmware command number is present; this was not a0xFFFF early rejection. GET160 receives a transport/protocol success with an empty reply, and the SDK correctly rejects it because it expects4 data bytes. Current mode cannot be read and saved, so safe restoration for a trial mode change is not established. Do not claim mode3 is available or test it on this evidence alone."
+  },
+  "bounded_conclusion": "The investigated public output and recognized normal IR header do not provide a validated emitter-at-exposure tag. A documented hardware IR/NIR interleave mode exists in the generic SDK, but this D2 GET does not return a mode value. Reliable real illumination/exposure labeling remains unproven; finite negative findings do not establish that the hardware can never support it.",
+  "residual_unknowns": [
+    "Actual contents and purpose of any extra IR rows or sensor-specific payload tail.",
+    "Whether D2 firmware5.8.23 implements mode3 on SET159 despite its empty GET160 reply.",
+    "What waveforms, illumination source, exposure synchronization and frame labels an implemented mode3 would provide.",
+    "The exact exposure reference represented by raw header ticks and the runtime IR timestamp-source selection.",
+    "Whether there is another vendor-private frame metadata or synchronized lighting API outside the checked handlers."
+  ]
+}

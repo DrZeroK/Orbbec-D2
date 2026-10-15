@@ -1,0 +1,97 @@
+OpenCV 4.11.0 NumPy 1.26.4 aiohttp 3.14.5
+{"publication_checks": "passed", "files": 130, "hardware_access": false}
+test_reject_unpinned_driver (test_package.PackageTest) ... ok
+test_wrong_source_creates_no_output (test_package.PackageTest) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+test_damaged_pin_cannot_reset_to_first_run (test_auth_components.AuthComponentsTests) ... ok
+test_false_match_and_invalid_samples_stay_locked (test_auth_components.AuthComponentsTests) ... ok
+test_late_match_cannot_override_new_lock (test_auth_components.AuthComponentsTests) ... ok
+test_restart_locked_and_camera_failure_keeps_pin (test_auth_components.AuthComponentsTests) ... ok
+test_camera_failure_releases_rgb_lease_and_does_not_return_features (test_face_capture.RGBCaptureTests) ... ok
+test_enrollment_only_returns_temporary_rgb_features (test_face_capture.RGBCaptureTests) ... ok
+test_enrollment_without_a_face_cannot_write_a_template (test_face_capture.RGBCaptureTests) ... ok
+test_missing_or_multiple_faces_do_not_generate_identity_samples (test_face_capture.RGBCaptureTests) ... ok
+test_rgb_matching_succeeds_without_any_depth_or_ir_modules (test_face_capture.RGBCaptureTests) ... ok
+test_wrong_identity_remains_locked (test_face_capture.RGBCaptureTests) ... ok
+test_bad_template_can_be_reenrolled_after_pin (test_face_engine.FaceEngineTests) ... ok
+test_bad_worker_and_timeout_fail_closed (test_face_engine.FaceEngineTests) ... ok
+test_broken_enrollment_preserves_existing_template (test_face_engine.FaceEngineTests) ... ok
+test_invalid_sample_counts_cannot_replace_existing_rgb_template (test_face_engine.FaceEngineTests) ... ok
+test_private_template_and_model_binding (test_face_engine.FaceEngineTests) ... ok
+test_reject_malformed_features (test_face_engine.FaceEngineTests) ... ok
+test_rgb_status_is_independent_of_depth_sdk (test_face_engine.FaceEngineTests) ... ok
+test_bowed_paper_and_continuous_fold (test_face_pad.FacePadTests) ... ok
+test_excess_span_and_face_edge_background (test_face_pad.FacePadTests) ... ok
+test_flat_and_tilted_planes_even_with_large_depth_range (test_face_pad.FacePadTests) ... ok
+test_ir_invalid_saturated_and_low_texture (test_face_pad.FacePadTests) ... ok
+test_missing_face_landmarks_and_wrong_distance (test_face_pad.FacePadTests) ... ok
+test_missing_nose_and_background_in_nose (test_face_pad.FacePadTests) ... ok
+test_nonfinite_malformed_and_mismatched_inputs (test_face_pad.FacePadTests) ... ok
+test_photo_with_three_dimensional_background (test_face_pad.FacePadTests) ... ok
+test_quantized_noisy_positive_and_inputs_unchanged (test_face_pad.FacePadTests) ... ok
+test_synthetic_face_positive_is_geometry_only (test_face_pad.FacePadTests) ... ok
+test_channel_closes_on_failure_and_verify_has_no_channel (test_face_preview.PreviewTests) ... ok
+test_latest_fresh_frame_expires_and_end_clears_memory (test_face_preview.PreviewTests) ... ok
+test_slow_preview_consumer_never_blocks_capture (test_face_preview.PreviewTests) ... ok
+test_daemon_absence_keeps_standalone_native_capture (test_face_rgb_stream.RGBStreamTests) ... ok
+test_fresh_native_rgb_is_decoded_and_lease_released (test_face_rgb_stream.RGBStreamTests) ... ok
+test_stale_frame_is_drained_and_invalid_metadata_fails_closed (test_face_rgb_stream.RGBStreamTests) ... ok
+test_distortion_rotates_with_coordinates (test_factory_activation.FactoryActivationTests) ... ok
+test_factory_mode_is_explicit_bound_and_does_not_claim_verification (test_factory_activation.FactoryActivationTests) ... ok
+test_one_future_stream_is_rejected (test_factory_activation.FactoryActivationTests) ... ok
+test_pump_error_cannot_return_cached_data (test_factory_activation.FactoryActivationTests) ... ok
+test_pump_keeps_draining_and_delivers_distinct_latest_pairs (test_factory_activation.FactoryActivationTests) ... ok
+test_only_known_serial_getter_is_used_and_handles_close_on_mismatch (test_factory_serial.FactorySerialTests) ... ok
+test_pending_native_read_is_never_closed_concurrently (test_factory_serial.FactorySerialTests) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 1.880s
+
+OK
+test_bad_depth_scale_holes_and_nonfinite_fail_closed (test_ir_calibration.CalibrationTests) ... ok
+test_detect_rendered_chessboard_only_in_ram (test_ir_calibration.CalibrationTests) ... ok
+test_format_size_spec_and_missing_views_rejected (test_ir_calibration.CalibrationTests) ... ok
+test_front_parallel_translations_do_not_count_as_tilt_coverage (test_ir_calibration.CalibrationTests) ... ok
+test_low_error_but_limited_frame_coverage_rejected (test_ir_calibration.CalibrationTests) ... ok
+test_low_training_error_cannot_hide_bad_holdout (test_ir_calibration.CalibrationTests) ... ok
+test_projected_dots_preserve_native_corner_accuracy (test_ir_calibration.CalibrationTests) ... ok
+test_ray_projection_round_trip_and_depth_not_resampled (test_ir_calibration.CalibrationTests) ... ok
+test_repeated_pose_rejected_even_with_many_records (test_ir_calibration.CalibrationTests) ... ok
+test_restore_non_square_focal_off_centre_and_nonzero_distortion (test_ir_calibration.CalibrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.808s
+
+OK
+test_enrollment_framing_keeps_time_for_a_continuous_sample_streak (test_face_capture.CaptureWiringTests) ... ok
+test_geometry_pass_cannot_override_wrong_identity (test_face_capture.CaptureWiringTests) ... ok
+test_geometry_rejection_never_runs_identity_or_unlocks (test_face_capture.CaptureWiringTests) ... ok
+test_inference_timeout_does_not_count_an_expired_sample (test_face_capture.CaptureWiringTests) ... ok
+test_many_good_frames_inside_half_second_do_not_unlock (test_face_capture.CaptureWiringTests) ... ok
+test_mount_preview_is_upright_before_any_face_is_detected (test_face_capture.CaptureWiringTests) ... ok
+test_only_joint_identity_and_geometry_generate_pad_proof (test_face_capture.CaptureWiringTests) ... ok
+test_preview_orientation_is_corrected_even_when_geometry_rejects (test_face_capture.CaptureWiringTests) ... ok
+test_rejected_frame_resets_streak_instead_of_adding_good_frames (test_face_capture.CaptureWiringTests) ... ok
+test_stale_pair_is_not_counted_as_a_new_first_sample (test_face_capture.CaptureWiringTests) ... ok
+test_appearance_does_not_resize_or_modify_raw_measurements (test_face_ir_image.IRIdentityImageTests) ... ok
+test_bad_native_pixels_are_rejected_before_contrast_processing (test_face_ir_image.IRIdentityImageTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.466s
+
+OK
+test_bad_existing_file_is_preserved_and_rejected (test_download_models.ModelDownloadTests) ... ok
+test_reject_bad_download_before_writing_payload (test_download_models.ModelDownloadTests) ... ok
+test_verified_existing_file_is_not_downloaded_or_overwritten (test_download_models.ModelDownloadTests) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+OK
+example.onnx: SHA-256 verified
+{"self_test": 1, "assertions": 7, "camera_access": 0, "passed": 1}
+{"self_test": true, "assertions": 4, "camera_access": false}

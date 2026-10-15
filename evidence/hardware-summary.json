@@ -1,0 +1,48 @@
+{
+  "schema": "d2-public-hardware-summary/1",
+  "date": "2026-10-16",
+  "sample": {
+    "model": "Mx6000 TornadoD2",
+    "firmware": "5.8.23",
+    "depth_usb": "2bc5:060d",
+    "rgb_usb": "2bc5:0505",
+    "serial": "redacted"
+  },
+  "rgb_unlock": {
+    "user_confirmed": true,
+    "mode": "rgb-only",
+    "pin_preserved": true,
+    "templates_in_repository": false,
+    "photographs_in_repository": false,
+    "existing_template_reused": true,
+    "original_x5_ui_regression": {
+      "staged": {
+        "passed": 359,
+        "seconds": 112.658
+      },
+      "installed": {
+        "passed": 359,
+        "seconds": 111.6
+      },
+      "isolated_local_parallel_auth_merge": {
+        "passed": 17,
+        "seconds": 66.496,
+        "deployed": false
+      }
+    },
+    "limits": [
+      "仅彩色身份比较，无深度或红外活体防伪，照片或视频存在冒用风险",
+      "这次仅进行一次用户彩色解锁验收；未重复开展照片、视频或长期可靠性测试"
+    ]
+  },
+  "source_release": "accepted RGB-only release; later unrelated pending UI changes excluded",
+  "experimental_ir_depth": {
+    "enabled_in_current_unlock": false,
+    "acceptance_complete": false
+  },
+  "windows_hello": {
+    "system_ir_frames_read": true,
+    "login_accepted": false
+  },
+  "note": "Original full-UI test counts describe the original project, not the portable repository test count."
+}

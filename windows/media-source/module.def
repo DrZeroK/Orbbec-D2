@@ -1,0 +1,5 @@
+LIBRARY D2MediaSource
+EXPORTS
+    DllGetClassObject PRIVATE
+    DllCanUnloadNow PRIVATE
+    CreateD2MediaSource

@@ -1,0 +1,64 @@
+; Research package draft: requires built UMDF stub, complete runtime, validation, signing.
+; Does not replace the physical Orbbec USB driver.
+[Version]
+Signature="$WINDOWS NT$"
+Class=Camera
+ClassGuid={ca3e7ab9-b4c3-4ae6-8251-579ef933890f}
+Provider=%Provider%
+DriverVer=10/14/2026,0.1.0.0
+CatalogFile=D2CameraStub.cat
+PnpLockdown=1
+
+[DestinationDirs]
+StubCopy=13
+SourceCopy=13
+[SourceDisksNames]
+1=%Disk%,,,""
+[SourceDisksFiles]
+D2CameraStub.dll=1
+D2MediaSource.dll=1
+
+[Manufacturer]
+%Provider%=Models,NTamd64.10.0...22000
+[Models.NTamd64.10.0...22000]
+%Device%=D2Install,ROOT\D2InfraredSource
+[D2Install.NT]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT
+CopyFiles=StubCopy,SourceCopy
+[D2Install.NT.HW]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT.HW
+[D2Install.NT.Services]
+Include=WUDFRD.inf
+Needs=WUDFRD.NT.Services
+[D2Install.NT.Wdf]
+UmdfService=D2CameraStub,D2StubService
+UmdfServiceOrder=D2CameraStub
+UmdfKernelModeClientPolicy=AllowKernelModeClients
+[D2StubService]
+UmdfLibraryVersion=2.0
+ServiceBinary=%13%\D2CameraStub.dll
+[D2Install.NT.Interfaces]
+AddInterface=%VideoCamera%,D2InfraredSource,D2Interface
+AddInterface=%SensorCamera%,D2InfraredSource,D2Interface
+[D2Interface]
+AddReg=D2InterfaceReg,D2ComReg
+[D2InterfaceReg]
+HKR,,CLSID,,"{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+HKR,,CustomCaptureSourceClsid,,"{265E13EF-0B32-4E1D-8A91-CFD17143D89C}"
+HKR,,FriendlyName,,%Device%
+[D2ComReg]
+HKR,Classes\CLSID\{265E13EF-0B32-4E1D-8A91-CFD17143D89C},,,%Device%
+HKR,Classes\CLSID\{265E13EF-0B32-4E1D-8A91-CFD17143D89C}\InprocServer32,,0x00020000,"%13%\D2MediaSource.dll"
+HKR,Classes\CLSID\{265E13EF-0B32-4E1D-8A91-CFD17143D89C}\InprocServer32,ThreadingModel,,"Both"
+[StubCopy]
+D2CameraStub.dll
+[SourceCopy]
+D2MediaSource.dll
+[Strings]
+Provider="D2 Camera Research"
+Disk="D2 Camera Research Package"
+Device="D2 Infrared Research Source"
+VideoCamera="{E5323777-F976-4F5B-9B55-B94699C46E44}"
+SensorCamera="{24E552D7-6523-47F7-A647-D3465BF1F5CA}"

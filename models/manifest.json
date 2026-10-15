@@ -1,0 +1,79 @@
+{
+  "prepared_date": "2026-10-15 Asia/Shanghai",
+  "purpose": "Offline face detection and feature comparison research for D2 on RDK X5; no camera or biometric enrollment was accessed during preparation.",
+  "repository": "https://github.com/opencv/opencv_zoo",
+  "commit": "47534e27c9851bb1128ccc0102f1145e27f23f98",
+  "commit_resolution": "Read-only git ls-remote https://github.com/opencv/opencv_zoo.git refs/heads/main. GitHub unauthenticated commit API was rate-limited; no commit date is asserted.",
+  "models": [
+    {
+      "role": "face and five-landmark detection",
+      "file": "face_detection_yunet_2023mar.onnx",
+      "bytes": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "first_16_bytes_hex": "080612077079746f7263681a03312e37",
+      "download_url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+      "official_lfs_pointer_url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+      "official_lfs_pointer_file": "face_detection_yunet_2023mar.onnx.lfs-pointer.txt",
+      "verified_against_official_lfs_oid_and_size": true,
+      "is_lfs_pointer": false,
+      "license": "MIT",
+      "license_file": "face_detection_yunet.LICENSE",
+      "license_sha256": "c83b8120c50ccbd4c4f96edf53141bdd566ebb8f8e9227e415326aa1b1aba958",
+      "license_url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/LICENSE",
+      "official_readme": "https://github.com/opencv/opencv_zoo/blob/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/README.md",
+      "variant_reason": "Full unquantized2023mar model selected for existing OpenCV4.11 DNN; no OpenCV5-only engine assumptions or int8 quantized variant."
+    },
+    {
+      "role": "aligned face embedding and feature comparison",
+      "file": "face_recognition_sface_2021dec.onnx",
+      "bytes": 38696353,
+      "sha256": "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79",
+      "first_16_bytes_hex": "08063a96ebb9120a350a04646174610a",
+      "download_url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/face_recognition_sface_2021dec.onnx",
+      "official_lfs_pointer_url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/face_recognition_sface_2021dec.onnx",
+      "official_lfs_pointer_file": "face_recognition_sface_2021dec.onnx.lfs-pointer.txt",
+      "verified_against_official_lfs_oid_and_size": true,
+      "is_lfs_pointer": false,
+      "license": "Apache-2.0",
+      "license_file": "face_recognition_sface.LICENSE",
+      "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "license_url": "https://raw.githubusercontent.com/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/LICENSE",
+      "official_readme": "https://github.com/opencv/opencv_zoo/blob/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/README.md",
+      "official_wrapper": "https://github.com/opencv/opencv_zoo/blob/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_recognition_sface/sface.py"
+    }
+  ],
+  "minimal_opencv411_api_configuration": {
+    "detector_constructor": "cv2.FaceDetectorYN_create(yunet_path, '', (320, 320), 0.9, 0.3, 5000, cv2.dnn.DNN_BACKEND_OPENCV, cv2.dnn.DNN_TARGET_CPU)",
+    "detector_input": "BGR uint8 image,320x320. Preserve aspect ratio by letterboxing, and retain scale/padding so bounding box and five landmark coordinates can be mapped back to the original BGR frame.",
+    "detection_result": "retval, faces = detector.detect(detector_bgr); require exactly one accepted face for initial authentication experiments.",
+    "recognizer_constructor": "cv2.FaceRecognizerSF_create(sface_path, '', cv2.dnn.DNN_BACKEND_OPENCV, cv2.dnn.DNN_TARGET_CPU)",
+    "align_crop": "aligned = recognizer.alignCrop(original_bgr, face_row_in_original_coordinates); OpenCV4.11 source uses warpAffine output Size(112,112).",
+    "feature": "embedding = recognizer.feature(aligned); keep distinct query and enrolled feature copies if reusing recognizer outputs.",
+    "match": "score = recognizer.match(query_embedding, enrolled_embedding, cv2.FaceRecognizerSF_FR_COSINE); larger cosine scores indicate more similar embeddings.",
+    "opencv411_face_api_source": "https://github.com/opencv/opencv/blob/4.11.0/modules/objdetect/include/opencv2/objdetect/face.hpp",
+    "opencv411_alignment_implementation": "https://github.com/opencv/opencv/blob/4.11.0/modules/objdetect/src/face_recognize.cpp"
+  },
+  "experimental_threshold_suggestion_not_validated_for_user": {
+    "yunet_detection_confidence": 0.9,
+    "sface_cosine_starting_point": 0.6,
+    "consecutive_fresh_frames": 5,
+    "minimum_window_seconds": 0.5,
+    "reset_conditions": "Reset the matching streak on face absence, multiple faces, stale/repeated capture, invalid depth/quality or any score below the chosen threshold. Count distinct actual captures, not repeated UI samples of the same frame.",
+    "status": "These are conservative research starting values chosen for trial, not calibrated acceptance thresholds or a quantified security guarantee. No data from this user, this D2 or the X5 scene was used to validate them.",
+    "benchmark_warning": "The official SFace wrapper includes cosine0.363 and norm-L2 1.128 benchmark/demo thresholds. They were not adopted as authentication security thresholds. Increasing threshold or checking consecutive correlated frames does not establish spoof resistance or a false-accept rate.",
+    "calibration_needed": "Evaluate genuine-user scores across expected pose/lighting and nonmatching identities with explicit consent before setting a deployed threshold; enforce quality/liveness evidence separately and preserve the authorized PIN path."
+  },
+  "validation": {
+    "passed": [
+      "Both full model byte lengths and SHA256 digests exactly match their official commit-pinned Git LFS declarations.",
+      "Model binary prefixes differ from Git LFS pointer text; complete payloads were downloaded.",
+      "Each complete upstream model-directory license was saved and hashed.",
+      "OpenCV4.11 official API and alignment source were read to confirm constructor arguments and112x112 alignCrop output."
+    ],
+    "not_performed": [
+      "Model load/inference on X5 or Windows. The local bundled Python has neither cv2 nor onnx, and no additional package was installed.",
+      "Face enrollment, face photography, camera access, SSH access, user/nonmatching identity tests, accuracy/FAR/spoof evaluation or runtime performance measurement."
+    ],
+    "privacy_scope": "No third-party face dataset or user face photographs were downloaded. Only official model payloads, license texts and LFS provenance records are present."
+  }
+}

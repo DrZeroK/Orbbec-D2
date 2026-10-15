@@ -1,0 +1,12 @@
+{
+  "schema": "d2-factory-activation/1",
+  "enabled": true,
+  "experimental": true,
+  "serial": "D2_SAMPLE_SERIAL",
+  "driver_sha256": "4df458c5cec9a5795d0998ee035eb4fde67641a4ebde7d9c7565e9359866704f",
+  "factory_raw_hex": "cf7aee43cf7aee43af754443ca07a143a188ee43a188ee435af05143003a964383ff7f3f00e2433b835b20bb4f3e44bb8aff7f3fbe5313bb7eea1f3b63ce133ba3ff7f3fa715b1c10643db3db83bcf3f3312ec3b595f90bdad380ab99fc012ba00000000a06004bcb78cc43c2536883aa4b92e3900000000",
+  "source": "device-property14",
+  "user_requested_activation": true,
+  "physical_alignment_verified": false,
+  "absolute_exposure_age_proven": false
+}

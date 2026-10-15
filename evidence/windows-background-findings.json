@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-15",
+  "quality_route_verified": false,
+  "faceauth_advertised": false,
+  "windows_hello_enrollment_tested": false,
+  "source_changes": "Only independent test_background.cpp and build.cmd; no Source/Core changes for BGS",
+  "legacy_log_label_note": "background_test_result=0 means capture/control/restore execution succeeded, not FaceAuth quality passed. Existing logs preserved. Settled legacy role_mapping label was generic; actual code held each state for two reads and discarded its first transition frame.",
+  "initial_state_coverage": {
+    "restoration": "Each run Stop then fresh Start/Get returned original ON=1",
+    "states_tested": [
+      1
+    ],
+    "initial_off_tested": false
+  },
+  "runs": [
+    {
+      "mode": "continuous_worker_baseline",
+      "raw_frames": 302,
+      "raw_fps": 30.162312,
+      "pairs": 150,
+      "bgs_fps": 15.084171,
+      "minimum_30_interval_fps": 15.068258,
+      "largest_output_gap_ms": 70.656,
+      "positive_mean_pairs": 150,
+      "rejected_pairs": 0,
+      "resyncs": 1,
+      "slow_consumer_dropped_outputs": 70,
+      "role_mapping": "inferred_one_frame_lag",
+      "certification": "not verified"
+    },
+    {
+      "mode": "random_control_delay_0_to_20ms_and_120ms_producer_gap",
+      "raw_frames": 305,
+      "raw_fps": 29.85754,
+      "pairs": 150,
+      "bgs_fps": 14.780695,
+      "minimum_30_interval_fps": 13.684327,
+      "largest_output_gap_ms": 266.328,
+      "positive_mean_pairs": 90,
+      "rejected_pairs": 1,
+      "resyncs": 2,
+      "slow_consumer_dropped_outputs": 69,
+      "role_mapping": "inferred_one_frame_lag",
+      "certification": "phase mismatch and insufficient effective frame rate observed"
+    },
+    {
+      "mode": "four_reads_two_toggles_per_output",
+      "raw_frames": 602,
+      "raw_fps": 30.158428,
+      "pairs": 150,
+      "bgs_fps": 7.539057,
+      "minimum_30_interval_fps": 7.536716,
+      "largest_output_gap_ms": 134.065,
+      "positive_mean_pairs": 150,
+      "rejected_pairs": 0,
+      "resyncs": 1,
+      "slow_consumer_dropped_outputs": 0,
+      "role_mapping": "transition_frame_discarded",
+      "certification": "effective frame rate below 15fps"
+    }
+  ],
+  "continuous_phase_mismatch_example": {
+    "evidence_csv": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_stress_20261015.csv",
+    "pair": 2,
+    "ambient_index": 5,
+    "active_index": 6,
+    "ambient_mean": 5.50316,
+    "active_mean": 0.023742,
+    "bgs_mean": 0.001082,
+    "observation": "Consecutive frame indices did not guarantee prior-command illumination labels; current getter remained consistent with commands."
+  },
+  "evidence": [
+    {
+      "mode": "baseline",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_baseline_20261015.log",
+      "sha256": "02717cc5f69a6fa8cdfbd634c6d68bc06d412ae3fd63782442b735a8ecbc4a2f",
+      "bytes": 499
+    },
+    {
+      "mode": "baseline",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_baseline_20261015.csv",
+      "sha256": "faac61bb4844d19026f909b60286c589c1c257d15113f0524b25d9050f3ed6cf",
+      "bytes": 13388
+    },
+    {
+      "mode": "baseline",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_baseline_20261015_raw.csv",
+      "sha256": "152a634015087f5a302c2048f616676bf89f354c50ee7982c9702766925f5dc1",
+      "bytes": 12365
+    },
+    {
+      "mode": "baseline",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_baseline_20261015.pgm",
+      "sha256": "a1a9930218612a50ea967a117adc338438dfb000c2d0ec71fbd422707f0dc164",
+      "bytes": 256015
+    },
+    {
+      "mode": "stress",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_stress_20261015.log",
+      "sha256": "0b97237b7b6c651703ecf7df8cca29ffa18f3aa651f681936c77101195719b51",
+      "bytes": 526
+    },
+    {
+      "mode": "stress",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_stress_20261015.csv",
+      "sha256": "a7e8ad1f1c57dd7bc187004cd28c48b66e7a66d6a49078be873d35ab75d5b935",
+      "bytes": 13394
+    },
+    {
+      "mode": "stress",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_stress_20261015_raw.csv",
+      "sha256": "ebeaebd306b964444780811e045d2a725a296bc312478aae3706f4a62d9c8218",
+      "bytes": 12495
+    },
+    {
+      "mode": "stress",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_stress_20261015.pgm",
+      "sha256": "f8eb9ae6f0e36f80c782e7e030fbd98fc30a4aae870b6f04de0e99a7795cdd2c",
+      "bytes": 256015
+    },
+    {
+      "mode": "settled",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_settled_20261015.log",
+      "sha256": "40768cf3ed5ec3f45771283b00eefa357fca6fe365d12c3e429d8bb03e29b9ae",
+      "bytes": 503
+    },
+    {
+      "mode": "settled",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_settled_20261015.csv",
+      "sha256": "7009c2877fe05c44782f6a74935c44f6a0c43d34dbb3b687ff0e79b539cb2750",
+      "bytes": 13907
+    },
+    {
+      "mode": "settled",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_settled_20261015_raw.csv",
+      "sha256": "52f0d9f494eb92876d6c63b4ca85c92019148e143660c8a0111be8a79f65a9d1",
+      "bytes": 25265
+    },
+    {
+      "mode": "settled",
+      "path": "<PRIVATE_WORKSPACE>\\测试\\D2相机_20261014\\hello_research\\driver\\build\\background_settled_20261015.pgm",
+      "sha256": "596d1bc125b40d332492b38bb7b3747fdbf6c51c8637f3ca45ece9808c1993e4",
+      "bytes": 256015
+    }
+  ],
+  "limitations": [
+    "No exposure-synchronized illumination metadata; current getter is not frame metadata.",
+    "Baseline brightness agreement is limited evidence, not verified phase under scheduling variation.",
+    "30-interval minimum is a finite observed window, not a guaranteed real-time lower bound.",
+    "Only ON initial state was tested; authentication registration and security/certification were not tested."
+  ],
+  "rea_session_owned": false
+}

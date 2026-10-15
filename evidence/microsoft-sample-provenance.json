@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/microsoft/Windows-driver-samples",
+  "commit": "2dc3fd3a0cc84a2933f2194e7ec0871584979071",
+  "original_manifest_sha256": "b5bcf55aa00028bfd3f24946a4d861983d5de7661ee1f37e99a8b8b133fbfb37",
+  "license": "MS-PL",
+  "license_file": "windows/media-source/LICENSE.microsoft-sample.txt",
+  "note": "See upstream sample provenance in original research; this repository contains only the D2 experimental implementation and stub."
+}

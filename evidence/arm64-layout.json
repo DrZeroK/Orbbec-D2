@@ -1,0 +1,204 @@
+{
+  "library": "测试\\D2_X5_20261015\\offline_sdk\\OpenNI_2.3.0.86_202210111155_4c8f5aa4_beta6_a311d\\sdk\\libs\\OpenNI2\\Drivers\\liborbbec.so",
+  "sha256": "24e43298e83d74bb3ce8dcf3ca28979e6334603f9d0534542aa5891cc6764e4b",
+  "size": 1520464,
+  "architecture": "ELF64 little-endian EM_AARCH64",
+  "table_symbol": "_ZN19XnDeviceEnumeration20ms_supportedProductsE",
+  "table_rva": "0x109dc0",
+  "table_file_offset": "0xf9dc0",
+  "table_size": 180,
+  "count_symbol_rva": "0x109db0",
+  "count": 45,
+  "load_segment": {
+    "file_offset": "0xf2070",
+    "virtual_address": "0x102070",
+    "file_size": "0x7eb4",
+    "memory_size": "0xd8a0",
+    "flags": "RW"
+  },
+  "pairs": [
+    [
+      "0x2bc5",
+      "0x300"
+    ],
+    [
+      "0x2bc5",
+      "0x301"
+    ],
+    [
+      "0x2bc5",
+      "0x400"
+    ],
+    [
+      "0x2bc5",
+      "0x401"
+    ],
+    [
+      "0x2bc5",
+      "0x402"
+    ],
+    [
+      "0x2bc5",
+      "0x403"
+    ],
+    [
+      "0x2bc5",
+      "0x404"
+    ],
+    [
+      "0x2bc5",
+      "0x407"
+    ],
+    [
+      "0x2bc5",
+      "0x601"
+    ],
+    [
+      "0x2bc5",
+      "0x60b"
+    ],
+    [
+      "0x2bc5",
+      "0x60e"
+    ],
+    [
+      "0x2bc5",
+      "0x60f"
+    ],
+    [
+      "0x2bc5",
+      "0x610"
+    ],
+    [
+      "0x2bc5",
+      "0x613"
+    ],
+    [
+      "0x2bc5",
+      "0x614"
+    ],
+    [
+      "0x2bc5",
+      "0x616"
+    ],
+    [
+      "0x2bc5",
+      "0x617"
+    ],
+    [
+      "0x2bc5",
+      "0x618"
+    ],
+    [
+      "0x2bc5",
+      "0x61b"
+    ],
+    [
+      "0x2bc5",
+      "0x62b"
+    ],
+    [
+      "0x2bc5",
+      "0x62c"
+    ],
+    [
+      "0x2bc5",
+      "0x62d"
+    ],
+    [
+      "0x2bc5",
+      "0x632"
+    ],
+    [
+      "0x2bc5",
+      "0x633"
+    ],
+    [
+      "0x2bc5",
+      "0x634"
+    ],
+    [
+      "0x2bc5",
+      "0x635"
+    ],
+    [
+      "0x2bc5",
+      "0x636"
+    ],
+    [
+      "0x2bc5",
+      "0x637"
+    ],
+    [
+      "0x2bc5",
+      "0x638"
+    ],
+    [
+      "0x2bc5",
+      "0x639"
+    ],
+    [
+      "0x2bc5",
+      "0x63a"
+    ],
+    [
+      "0x2bc5",
+      "0x650"
+    ],
+    [
+      "0x2bc5",
+      "0x651"
+    ],
+    [
+      "0x2bc5",
+      "0x654"
+    ],
+    [
+      "0x2bc5",
+      "0x655"
+    ],
+    [
+      "0x2bc5",
+      "0x656"
+    ],
+    [
+      "0x2bc5",
+      "0x657"
+    ],
+    [
+      "0x2bc5",
+      "0x658"
+    ],
+    [
+      "0x2bc5",
+      "0x659"
+    ],
+    [
+      "0x2bc5",
+      "0x65a"
+    ],
+    [
+      "0x2bc5",
+      "0x65b"
+    ],
+    [
+      "0x2bc5",
+      "0x65c"
+    ],
+    [
+      "0x2bc5",
+      "0x65d"
+    ],
+    [
+      "0x2bc5",
+      "0x698"
+    ],
+    [
+      "0x2bc5",
+      "0x69a"
+    ]
+  ],
+  "rea_initialize_evidence_id": "ev_54829189121e49800de3b0e0ae1937f5d301e9e5e0ad89d16eff0bfbff1e002b",
+  "ghidra_address_note": "Ghidra adds image base 0x100000; ELF RVAs in loader do not include this analysis-only base.",
+  "runtime_execution": "not performed"
+}

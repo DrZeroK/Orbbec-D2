@@ -1,0 +1,26 @@
+[
+  {
+    "file": "openni-device-windows-driver-4.3.0.22.zip",
+    "url": "https://github.com/orbbec/OpenNI_SDK/releases/download/v2.3.0.86-beat6/openni-device-windows-driver-4.3.0.22.zip",
+    "status": "downloaded",
+    "bytes": 4390251,
+    "sha256": "009ACCC9449202855EDA35235EDAD5DAB3ABBB2840ADD231661309892F985F05",
+    "retrieved_at": "2026-10-13T04:18:29.1587971Z"
+  },
+  {
+    "file": "OpenNI_2.3.0.86_202210111155_4c8f5aa4_beta6_arm64.zip",
+    "url": "https://github.com/orbbec/OpenNI_SDK/releases/download/v2.3.0.86-beat6/OpenNI_2.3.0.86_202210111155_4c8f5aa4_beta6_arm64.zip",
+    "status": "downloaded",
+    "bytes": 116889122,
+    "sha256": "4A1B0277DCA25D2A323413D02D22D87A4CE64117678ABAFFB187D48AEC2A46D0",
+    "retrieved_at": "2026-10-13T04:18:46.7103104Z"
+  },
+  {
+    "file": "OpenNI_2.3.0.86_202210111950_4c8f5aa4_beta6_windows_x64.zip",
+    "url": "https://github.com/orbbec/OpenNI_SDK/releases/download/v2.3.0.86-beat6/OpenNI_2.3.0.86_202210111950_4c8f5aa4_beta6_windows_x64.zip",
+    "status": "downloaded",
+    "bytes": 120203586,
+    "sha256": "8B95C8392E6CE75AFFACAFC6FC007544F1757AE499E2E23401166E66A9486035",
+    "retrieved_at": "2026-10-13T04:18:50.7159907Z"
+  }
+]

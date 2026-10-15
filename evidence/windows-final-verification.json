@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-15T01:04:35.3200542+08:00",
+  "windows_hello_enabled": false,
+  "faceauth_advertised": false,
+  "system_ir_capture": "S_OK, 256000-byte actual frame; CurrentUser/Session camera removed",
+  "direct_source_final": "90 frames plus 5 after restart; source reader 30 frames; activation passed",
+  "dll_sha256": "C43B7E675A90FBD19F6CF5CFBA0B676661CD8A7E4AD926956FE0C6CEA830CCEF",
+  "sdk_sha256": "BD08E87378EBA3342F892C5D9CF00AF1DFBF674EF46CEC3812EBEC0D669D1245",
+  "hklm_source_clsid_present": false,
+  "hkcu_source_clsid_present": false,
+  "depth_probe": "测试/D2相机_20261014/depth_20261015_010348_332466/measurements.json",
+  "depth_result": "30 frames received with valid pixels; center has no valid depth in current scene; no new ruler validation",
+  "workspace_check": "PASS",
+  "bgs_evidence": "architecture/background_findings.json",
+  "illumination_initial_off_tested": false,
+  "firmware_flashed": false,
+  "secure_boot_changed": false,
+  "ess_changed": false,
+  "boot_test_signing_changed": false,
+  "permanent_hello_driver_installed": false
+}

@@ -1,0 +1,730 @@
+{
+  "schema": "d2-public-source-provenance/1",
+  "date": "2026-10-16",
+  "hash_convention": "SHA256 of curated checkout bytes; .cmd uses CRLF via .gitattributes; other text LF",
+  "license_scope": "Root MIT covers own work only; see THIRD_PARTY_NOTICES.md",
+  "files": [
+    {
+      "source": "测试/D2相机_20261014/probe_openni.py",
+      "path": "windows/openni/probe_openni.py",
+      "original_sha256": "daf02cad19464899ccffdd2d72d541a724ea1eca26ced46bc0e01d560668a320",
+      "published_sha256": "65e26c2c656b095a53a8abc64c4c459d6e2dfbb52a4d69fc8f83267bc12338eb",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/probe_depth.py",
+      "path": "windows/openni/probe_depth.py",
+      "original_sha256": "c57e6a5d649431ffadf467bc953ef77f6ca12037b1543b04b99b7c1eb649363d",
+      "published_sha256": "a946c31a15c52fb9736749f87c6e19f9905dcfaefc84a1f36e38c99cf027472d",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/probe_usb_descriptor.py",
+      "path": "windows/openni/probe_usb_descriptor.py",
+      "original_sha256": "0750092a0c66bd1f3e4861ee90f77e26809eb0a70adec2853252d431c0a7472d",
+      "published_sha256": "0750092a0c66bd1f3e4861ee90f77e26809eb0a70adec2853252d431c0a7472d",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/trace_openni.py",
+      "path": "windows/openni/trace_openni.py",
+      "original_sha256": "dea8fa549199d5aba0a4ed379611f896b87583eb02d965c2cbb2840223deaa7c",
+      "published_sha256": "dea8fa549199d5aba0a4ed379611f896b87583eb02d965c2cbb2840223deaa7c",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/build.cmd",
+      "path": "windows/media-source/build.cmd",
+      "original_sha256": "9ccfd640159df0a5f65161472116f96d8980ec8d233412057653982da8a73f90",
+      "published_sha256": "693c864e765a11f25184df03608fe01dd2bbafb28d9705ff643cc34625424a6c",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/D2Capture.cpp",
+      "path": "windows/media-source/D2Capture.cpp",
+      "original_sha256": "e503d87887de6664ddd34d3d92122896f327ac2c826325b760046eff35750fa9",
+      "published_sha256": "c1ad17800028d03693faa9714bda49361d32dbbd9696dfbe38ef2dc43390834f",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/D2Capture.h",
+      "path": "windows/media-source/D2Capture.h",
+      "original_sha256": "d98fd30a065294b512ee9a5c8586b6d5db30776fb33d5c617c5bc2c7bd85974c",
+      "published_sha256": "d98fd30a065294b512ee9a5c8586b6d5db30776fb33d5c617c5bc2c7bd85974c",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/D2MediaSource.cpp",
+      "path": "windows/media-source/D2MediaSource.cpp",
+      "original_sha256": "8169ecc7de317a49e696eb05b11bbda6bb44276a5b440246f12f6f5adb478705",
+      "published_sha256": "8169ecc7de317a49e696eb05b11bbda6bb44276a5b440246f12f6f5adb478705",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/D2MediaSource.h",
+      "path": "windows/media-source/D2MediaSource.h",
+      "original_sha256": "0a9757101c66cb59ed7e1ba9c52b05a5e2b58247254684b6e3f8a591768f6572",
+      "published_sha256": "0a9757101c66cb59ed7e1ba9c52b05a5e2b58247254684b6e3f8a591768f6572",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/dllmain.cpp",
+      "path": "windows/media-source/dllmain.cpp",
+      "original_sha256": "443ba55cefaceb317166a8e6b53e4bc5067c0accfcad26075583900ce981da9e",
+      "published_sha256": "443ba55cefaceb317166a8e6b53e4bc5067c0accfcad26075583900ce981da9e",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/LICENSE.microsoft-sample.txt",
+      "path": "windows/media-source/LICENSE.microsoft-sample.txt",
+      "original_sha256": "07639618c7b94ab9953cc61715f6325877e1854dca611ed9b1bd54497cf5e93a",
+      "published_sha256": "07639618c7b94ab9953cc61715f6325877e1854dca611ed9b1bd54497cf5e93a",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/module.def",
+      "path": "windows/media-source/module.def",
+      "original_sha256": "502b0bae3d4837be6d77be242dd94a529579c01afd8a995c9569895820101719",
+      "published_sha256": "502b0bae3d4837be6d77be242dd94a529579c01afd8a995c9569895820101719",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/probe_system_source.ps1",
+      "path": "windows/media-source/probe_system_source.ps1",
+      "original_sha256": "2d7eda59823f6f8caeb7ebd3b03410dfc632b21f880a7fb563bf90c81164a245",
+      "published_sha256": "2d7eda59823f6f8caeb7ebd3b03410dfc632b21f880a7fb563bf90c81164a245",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/README.md",
+      "path": "windows/media-source/README.md",
+      "original_sha256": "4949ef47b22c731c162ab4bf0dc4d9512a8f97d4e1d51e98912d9218cd7daf69",
+      "published_sha256": "7b1a75944f87f47195e2f9a995335f30e4239843cd71b939422bb86da0eb5837",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/test_activate.cpp",
+      "path": "windows/media-source/test_activate.cpp",
+      "original_sha256": "c3e369f3d4de2b4244929b15764a36c266958012a6fe892cbe1074edf4456b5c",
+      "published_sha256": "c3e369f3d4de2b4244929b15764a36c266958012a6fe892cbe1074edf4456b5c",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/test_background.cpp",
+      "path": "windows/media-source/test_background.cpp",
+      "original_sha256": "938ce11a3d3ccee1160066c9f175930672b8f71622b220edfce271061e790e63",
+      "published_sha256": "938ce11a3d3ccee1160066c9f175930672b8f71622b220edfce271061e790e63",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/test_capture.cpp",
+      "path": "windows/media-source/test_capture.cpp",
+      "original_sha256": "4cc3dbe66e3932252cb1bd36688bb22753376b12e6e76927496901ba7b86ff47",
+      "published_sha256": "4cc3dbe66e3932252cb1bd36688bb22753376b12e6e76927496901ba7b86ff47",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/test_consumer.cpp",
+      "path": "windows/media-source/test_consumer.cpp",
+      "original_sha256": "27fc1f838b4eab06ea92ca0ecc2b48e80cdaa7713b1443bbe478a8174fc5cb87",
+      "published_sha256": "27fc1f838b4eab06ea92ca0ecc2b48e80cdaa7713b1443bbe478a8174fc5cb87",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/test_source_reader.cpp",
+      "path": "windows/media-source/test_source_reader.cpp",
+      "original_sha256": "836ad569eca37e4a5889001f52736fd2945230c8a4033ce2b7726b1c2629f598",
+      "published_sha256": "836ad569eca37e4a5889001f52736fd2945230c8a4033ce2b7726b1c2629f598",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/virtual_camera_probe.cpp",
+      "path": "windows/media-source/virtual_camera_probe.cpp",
+      "original_sha256": "5e0879fd3f81ebb07edf1089c7bb59b4bf3be8ad4ad252b36450b96da2ad7945",
+      "published_sha256": "5e0879fd3f81ebb07edf1089c7bb59b4bf3be8ad4ad252b36450b96da2ad7945",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/stub/D2CameraStub.inf",
+      "path": "windows/media-source/stub/D2CameraStub.inf",
+      "original_sha256": "ad5f15b2935e0f3c907ac09ff5ea0bb2a94d95158ef9874081303d654e710b97",
+      "published_sha256": "ad5f15b2935e0f3c907ac09ff5ea0bb2a94d95158ef9874081303d654e710b97",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/probe_depth_ir_mode_trace.py",
+      "path": "windows/research/probe_depth_ir_mode_trace.py",
+      "original_sha256": "ca622bbf0ddf3af7bb5d722f0094ed7e58af1d062354d8a528fc9fd06b436ef2",
+      "published_sha256": "ca622bbf0ddf3af7bb5d722f0094ed7e58af1d062354d8a528fc9fd06b436ef2",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/probe_hello_properties.py",
+      "path": "windows/research/probe_hello_properties.py",
+      "original_sha256": "f8953e8c1de8bddbc2bb86c3a77311d08c00d1358106db2a61e1b7228240b78b",
+      "published_sha256": "f8953e8c1de8bddbc2bb86c3a77311d08c00d1358106db2a61e1b7228240b78b",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/trace_emitter.py",
+      "path": "windows/research/trace_emitter.py",
+      "original_sha256": "c72833992efd07111a27b2566de9e40ff1e0eafc1a89b45722f5fe1b86842fff",
+      "published_sha256": "c72833992efd07111a27b2566de9e40ff1e0eafc1a89b45722f5fe1b86842fff",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/trace_flood_support.py",
+      "path": "windows/research/trace_flood_support.py",
+      "original_sha256": "a734406636443973baaf81046be62d5cea552486f358c8c348bfcd2454fdc73a",
+      "published_sha256": "a734406636443973baaf81046be62d5cea552486f358c8c348bfcd2454fdc73a",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_X5_20261015/offline_sdk/d2_arm64.py",
+      "path": "linux/legacy/d2_arm64.py",
+      "original_sha256": "e92f8504ba2e3633c9c0f87fbc3809094834ad1607d2bc035bba9f7814182135",
+      "published_sha256": "e92f8504ba2e3633c9c0f87fbc3809094834ad1607d2bc035bba9f7814182135",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/face_engine.py",
+      "path": "integrations/x5-ui/face_engine.py",
+      "original_sha256": "0834b40f0a73218b5c61ac98e1098dd094ef1a369cf4a4f5dca8ace40ac9e3f1",
+      "published_sha256": "0834b40f0a73218b5c61ac98e1098dd094ef1a369cf4a4f5dca8ace40ac9e3f1",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/screen_auth.py",
+      "path": "integrations/x5-ui/screen_auth.py",
+      "original_sha256": "f9faae805eaec37e8c1a2c743a9a2fdd00c5bd48f01caed8d02193416570b94d",
+      "published_sha256": "f9faae805eaec37e8c1a2c743a9a2fdd00c5bd48f01caed8d02193416570b94d",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/face_rgb_stream.py",
+      "path": "integrations/x5-ui/face_rgb_stream.py",
+      "original_sha256": "03503931832921aea7979cc9ac7aeb754feda068d0e1e737ac2487929e75bb6c",
+      "published_sha256": "03503931832921aea7979cc9ac7aeb754feda068d0e1e737ac2487929e75bb6c",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/face_preview.py",
+      "path": "integrations/x5-ui/face_preview.py",
+      "original_sha256": "1f4f28b7df36e6f770a91771f51b6827589c79ea27a539f931e2155319d0a458",
+      "published_sha256": "1f4f28b7df36e6f770a91771f51b6827589c79ea27a539f931e2155319d0a458",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/d2_camera.py",
+      "path": "integrations/x5-ui/d2_camera.py",
+      "original_sha256": "41b22598e20011e54e25db22b70ea801d7ab6ee1f8044db0407abedb4fe9fc76",
+      "published_sha256": "6bf4f5b989b82370a66cb9abc7672416f3351e53f011f6afc8dd1392d161e417",
+      "adapted": true
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/face_pad.py",
+      "path": "integrations/x5-ui/face_pad.py",
+      "original_sha256": "e90bb80fd93f3185a0ad0d4742507f1bd6e43058dfaabaf7143b2b324db32b46",
+      "published_sha256": "e90bb80fd93f3185a0ad0d4742507f1bd6e43058dfaabaf7143b2b324db32b46",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/qml/qml/LockOverlay.qml",
+      "path": "integrations/x5-ui/qml/LockOverlay.qml",
+      "original_sha256": "9a73e4affe2bab1bfff025ddf52164b0c83060115e405f91040f88b46d18647a",
+      "published_sha256": "9a73e4affe2bab1bfff025ddf52164b0c83060115e405f91040f88b46d18647a",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/tests/test_face_capture.py",
+      "path": "integrations/x5-ui/tests/test_face_capture.py",
+      "original_sha256": "85a26459692c0948eff753cff4e61e3130b2580b8f8a3f68128e0e972594600a",
+      "published_sha256": "85a26459692c0948eff753cff4e61e3130b2580b8f8a3f68128e0e972594600a",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/tests/test_face_engine.py",
+      "path": "integrations/x5-ui/tests/test_face_engine.py",
+      "original_sha256": "ef9c61c8bda4135ab4c53ecd07e35e2a9e5f4abb2352e17e17d0e58c3e27a0d8",
+      "published_sha256": "ef9c61c8bda4135ab4c53ecd07e35e2a9e5f4abb2352e17e17d0e58c3e27a0d8",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_RGB_only_20261015/stage/src/x5-ui/tests/test_screen_auth.py",
+      "path": "integrations/x5-ui/upstream-tests/test_screen_auth.py",
+      "original_sha256": "0639d54c55a7b9fea1d328d7c424698f26e6339a508611e97fcbb99319d840db",
+      "published_sha256": "0639d54c55a7b9fea1d328d7c424698f26e6339a508611e97fcbb99319d840db",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_face_pad.py",
+      "path": "integrations/x5-ui/tests/test_face_pad.py",
+      "original_sha256": "2d85d47873769cd441ff0c33c4f5eb73ce2f2cbfba7df96166ae4765a1710740",
+      "published_sha256": "2d85d47873769cd441ff0c33c4f5eb73ce2f2cbfba7df96166ae4765a1710740",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_factory_activation.py",
+      "path": "integrations/x5-ui/tests/test_factory_activation.py",
+      "original_sha256": "9efa8892d3737ee48467b0061b3497c9b7643a50d7a9d8b8ff84cc2a6e3fce29",
+      "published_sha256": "9efa8892d3737ee48467b0061b3497c9b7643a50d7a9d8b8ff84cc2a6e3fce29",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_factory_serial.py",
+      "path": "integrations/x5-ui/tests/test_factory_serial.py",
+      "original_sha256": "6ee7debe73d84ac88f4fe62d03c48ff95356f7129f668ad1687a2be0511e2852",
+      "published_sha256": "6ee7debe73d84ac88f4fe62d03c48ff95356f7129f668ad1687a2be0511e2852",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_face_preview.py",
+      "path": "integrations/x5-ui/tests/test_face_preview.py",
+      "original_sha256": "adbbea41852522c86bab393553a0db039ec4b01a5f2743b7aa78a22026a59c1a",
+      "published_sha256": "adbbea41852522c86bab393553a0db039ec4b01a5f2743b7aa78a22026a59c1a",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_face_rgb_stream.py",
+      "path": "integrations/x5-ui/tests/test_face_rgb_stream.py",
+      "original_sha256": "aefdd8bbd2e1d86fa14e68183d7d01ef51364ba08d1f8dbb7c8cf8718ca66be5",
+      "published_sha256": "aefdd8bbd2e1d86fa14e68183d7d01ef51364ba08d1f8dbb7c8cf8718ca66be5",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/factory_activation_fixture.json",
+      "path": "integrations/x5-ui/tests/factory_activation_fixture.json",
+      "original_sha256": "d3e1a36c4aecf86b704c5ea722d5b6c03160f57ababfa3be95e9448baa69902e",
+      "published_sha256": "91d726b3cb140ad914010d69137b7a8fec528cac3d8f51d394e40c9f2f5f9bff",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_PAD_enroll_fix_20261015/stage/src/x5-ui/face_engine.py",
+      "path": "experiments/ir-face/face_engine.py",
+      "original_sha256": "b7893276753dfc6dff6eeda8219c113d8c6377d8420db9e07a0aaf1cca7a8c76",
+      "published_sha256": "b7893276753dfc6dff6eeda8219c113d8c6377d8420db9e07a0aaf1cca7a8c76",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_PAD_enroll_fix_20261015/stage/src/x5-ui/tests/test_face_capture.py",
+      "path": "experiments/ir-face/tests/test_face_capture.py",
+      "original_sha256": "544a9c49471fc214277044823c5a8f7c878630c67a42c58aab331a9de7bc3b2a",
+      "published_sha256": "544a9c49471fc214277044823c5a8f7c878630c67a42c58aab331a9de7bc3b2a",
+      "adapted": false
+    },
+    {
+      "source": "rdk-x5/src/x5-ui/tests/test_face_ir_image.py",
+      "path": "experiments/ir-face/tests/test_face_ir_image.py",
+      "original_sha256": "32dfef84b9341b7c6667d591df0936f843c8a0ecdbef4a0f3a4b2ccab2fe8eea",
+      "published_sha256": "32dfef84b9341b7c6667d591df0936f843c8a0ecdbef4a0f3a4b2ccab2fe8eea",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/ir_calibration.py",
+      "path": "tools/calibration/ir_calibration.py",
+      "original_sha256": "b79cddfa446cd407d4e3346a040c6c55a99f9d6d4fb232cf4396aa6d642379e0",
+      "published_sha256": "b79cddfa446cd407d4e3346a040c6c55a99f9d6d4fb232cf4396aa6d642379e0",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/test_ir_calibration.py",
+      "path": "tools/calibration/test_ir_calibration.py",
+      "original_sha256": "ca0711e8c12ba1d92cae9434102dcf1a6188322ecc76b1fd606bb94ccd203717",
+      "published_sha256": "ca0711e8c12ba1d92cae9434102dcf1a6188322ecc76b1fd606bb94ccd203717",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/timing_probe.py",
+      "path": "tools/calibration/timing_probe.py",
+      "original_sha256": "8573de3ad34e74b85d0eef3bf5aa2d2eb8a1d5e69bd54114944dcf250dd4cbe7",
+      "published_sha256": "dffa711a8cfd15618fd34de6ae3c0ed50aa12a6ddb6e6595fa48f27705d6fd77",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/capture_checker.py",
+      "path": "tools/calibration/capture_checker.py",
+      "original_sha256": "9ecd22113869cb63a6eda0a2a774aec592ec0b8c8efc0fcef11d268c4a40485e",
+      "published_sha256": "63b98b7cf4e8c2c0178386e6b7d257736d4307101de808ab5834b3cc721a38e9",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/checker_diagnostics.py",
+      "path": "tools/calibration/checker_diagnostics.py",
+      "original_sha256": "67269a1d8fedd1f78ec9b1d40d79175970ef36e02fd6a6cdc029f66bdd9069ea",
+      "published_sha256": "67269a1d8fedd1f78ec9b1d40d79175970ef36e02fd6a6cdc029f66bdd9069ea",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_calibration_live_20261015_1920/board_preview.py",
+      "path": "tools/calibration/board_preview.py",
+      "original_sha256": "9c3350cf8532536b57a3edcc8fa0cb2de9af4c9b8fcbcaaaa9f15ecc438071e2",
+      "published_sha256": "9c3350cf8532536b57a3edcc8fa0cb2de9af4c9b8fcbcaaaa9f15ecc438071e2",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/read_factory.py",
+      "path": "tools/calibration/read_factory.py",
+      "original_sha256": "65f298995713101c12178f040232ae4c2a00e1114cc2793f415c45816d754988",
+      "published_sha256": "dfab83028a2edd6af54d982f91f66556d69dbb64de2129749711802f2c028daf",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/verify_factory.py",
+      "path": "tools/calibration/verify_factory.py",
+      "original_sha256": "4b1f881369f85ce0b595e252f9cf75bba076e6131bae80eba22e3c82146998b3",
+      "published_sha256": "4b1f881369f85ce0b595e252f9cf75bba076e6131bae80eba22e3c82146998b3",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/corner_floor.py",
+      "path": "tools/calibration/corner_floor.py",
+      "original_sha256": "059e109e8b67c876c4ca9264607e183788ef8aefd3fa50999f9c9fc042237716",
+      "published_sha256": "059e109e8b67c876c4ca9264607e183788ef8aefd3fa50999f9c9fc042237716",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/detector_compare.py",
+      "path": "tools/calibration/detector_compare.py",
+      "original_sha256": "0ba89ee03abb6aec94744e89e81abb3a64d3bbfd15c6a4cde766767989ecd7e3",
+      "published_sha256": "891777960f5cecde7ecfc07e414c1852cf4f2663565445a1540cf7f288934575",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/board_boundary.py",
+      "path": "tools/calibration/board_boundary.py",
+      "original_sha256": "3e6941945f97796100e6f9267129bc707989a0dbc43982f407fb37abf2064950",
+      "published_sha256": "3e6941945f97796100e6f9267129bc707989a0dbc43982f407fb37abf2064950",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_factory_acceptance_20261015/capture_boundary.py",
+      "path": "tools/calibration/capture_boundary.py",
+      "original_sha256": "7ff0074a3ef0c2e253223419ccec475478fe1cec2f4a4ab4d7025f22a7160160",
+      "published_sha256": "e4a9b2a00079de3206d7d9abe6e0968a387ba8616936d8492e485cb2c044ca9f",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_HD_20261015/raw_probe.cpp",
+      "path": "experiments/modes/raw_probe.cpp",
+      "original_sha256": "7aac1abe40cda33e12386c11543d9e733cc7ad79009c55527c4104cf347d261a",
+      "published_sha256": "7aac1abe40cda33e12386c11543d9e733cc7ad79009c55527c4104cf347d261a",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_HD_20261015/usb_metadata.cpp",
+      "path": "experiments/modes/usb_metadata.cpp",
+      "original_sha256": "4e40044b78723d57da5bc300a42ed27780775a4b3cef563cd6b788edb594a8f6",
+      "published_sha256": "4e40044b78723d57da5bc300a42ed27780775a4b3cef563cd6b788edb594a8f6",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_HD_20261015/matrix.py",
+      "path": "experiments/modes/matrix.py",
+      "original_sha256": "eeaeaf2ef80571674f22eb70a4fe3726c5ab14e3116c3e84e245ce3b14f38496",
+      "published_sha256": "ebece635ccac031436af48171a0a0f34e0fbcfe5d2483a743a1b5b849eca400a",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_HD_20261015/rgb_matrix.py",
+      "path": "experiments/modes/rgb_matrix.py",
+      "original_sha256": "d87e11e8324e5f167369046afe20bc6d1fdccf36479531513be498860c31f90d",
+      "published_sha256": "6257bf218c4b7352f74eec3561a3b530bd054069cb9105c3fcac128c15b49697",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_HD_20261015/rgb_worker.py",
+      "path": "experiments/modes/rgb_worker.py",
+      "original_sha256": "7f51224acb3d15a2fa7cac268983565d421714dea2770d65cb5b9bdd5ee6a456",
+      "published_sha256": "0b444a1626323edb9734766f25d17d6592316658be8da1155e3a3bdf8ff40cec",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_FPS_20261015/coexistence.py",
+      "path": "experiments/modes/coexistence.py",
+      "original_sha256": "024c52e972cc7c987d68f6af9f7e4dd949ab3e6069ebe830d0d4aa55dacfee72",
+      "published_sha256": "45dfcd10b67400b78eb5a24dfc829059873224a132c199ae02653d8375265077",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_FPS_20261015/rgb_fps_experiment.py",
+      "path": "experiments/modes/rgb_fps_experiment.py",
+      "original_sha256": "54942e3bab0e9d5a65deb681d031174fd78fdf62d5eb2c87b6ce664354d45ab5",
+      "published_sha256": "54942e3bab0e9d5a65deb681d031174fd78fdf62d5eb2c87b6ce664354d45ab5",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_FPS_20261015/sdk_fps_experiment.py",
+      "path": "experiments/modes/sdk_fps_experiment.py",
+      "original_sha256": "feb2769ee3e64f664d4e5670442608afdcba6207728890d910e7bf6dfaa40232",
+      "published_sha256": "b577ecb941d4d8263e318966403ad82ae8912ffdb864d6b5d045fc2aae74f5c0",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/01_产品参数与型号辨识.md",
+      "path": "docs/research-notes/01_产品参数与型号辨识.md",
+      "original_sha256": "8e359e483f522a2ec87194746d2ff31f4446c2a9b9ea35526c298027a03a3a27",
+      "published_sha256": "74972f1edc162b3731fe87ff82d319b0409fb1e0eb8b36a4e4a1e3fc5e7c1ccc",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/02_SDK驱动与开发资料.md",
+      "path": "docs/research-notes/02_SDK驱动与开发资料.md",
+      "original_sha256": "d3b6ff90ed51b7ea0bd98b0aff76bf36dce43fb8da73363ddd51f2eb60c05c69",
+      "published_sha256": "21d12f4080779b09f9ef4afd7d5384bbfc0db404bef52953ef6f3405babf6a93",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/03_RDKX5接入评估与验收.md",
+      "path": "docs/research-notes/03_RDKX5接入评估与验收.md",
+      "original_sha256": "63d0a8c1189c6dd99d405c102431b629e41b34be0236bef47abf0346e0709a7e",
+      "published_sha256": "8283de3838bb67a58d5aaf9699aedf199887c76801c18809b4fd3be43f5db77a",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/04_来源与离线文件清单.md",
+      "path": "docs/research-notes/04_来源与离线文件清单.md",
+      "original_sha256": "3166ecffa397552ce2209c5c4e59a1da89b9fb5f668cc3b6113eaf2b922acc17",
+      "published_sha256": "2c6a33cebfeb5de245ae44a84afb1faa59d397987fda3e840779b3f9b5067615",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/05_向卖家确认的资料清单.md",
+      "path": "docs/research-notes/05_向卖家确认的资料清单.md",
+      "original_sha256": "1d53e28a04b8d40266c3069c054959f9a5cf54e56c536ede83127e1765e39ed5",
+      "published_sha256": "d70044c2219b1fe5d409ecaf35d69c71aa3ac0740c219f0841c4d6da433843ee",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/06_实机排查进展_20261014.md",
+      "path": "docs/research-notes/06_实机排查进展_20261014.md",
+      "original_sha256": "75a50a0b03674f0ebc3a6dd4afaed93f7cddaa8678ebba67e98f69820b5d4963",
+      "published_sha256": "155d89015557a753cb4d65fdca5d8f551a92fe0a762b296a347faeeaea82101c",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/07_重启换线复查与技术支持询问_20261014.md",
+      "path": "docs/research-notes/07_重启换线复查与技术支持询问_20261014.md",
+      "original_sha256": "0e03fb76af4cd30a72ec58a4ff246435608b34c80ceef7958f79e05b1aee1f75",
+      "published_sha256": "b254ffb85bf0b7322fd2742328b0c8f9befe754ae8874f822548fee22f66f61e",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/08_OpenNI逆向修复与测距验收_20261014.md",
+      "path": "docs/research-notes/08_OpenNI逆向修复与测距验收_20261014.md",
+      "original_sha256": "effc0c1e0171c8dcb5f3c4a63da151e4685925000d3e98ecb3804f357be5ba4f",
+      "published_sha256": "c958fe10427c5604ce2104f1db5218e25e2a2f5575badb2146ce5f85eb418df4",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/09_WindowsHello适配研究_20261014.md",
+      "path": "docs/research-notes/09_WindowsHello适配研究_20261014.md",
+      "original_sha256": "c11d6b3d76c59de813ec6775372249b2d055236c176063954fbbb55cded9e583",
+      "published_sha256": "d07b811ba6d0157e1be887bed74c6e29226482d5bd296ae6272e1963ff53564a",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/10_X5取流与本地屏幕解锁_20261015.md",
+      "path": "docs/research-notes/10_X5取流与本地屏幕解锁_20261015.md",
+      "original_sha256": "2d18ae8e3679f64b8272e0b451013f6f70933fa90fb3c42c5fcd4d235901cee7",
+      "published_sha256": "12996116df8399552a556d1100ac0821bcf837ab318cf8a7e83973e91b620e5d",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/11_X5深度红外防伪候选_20261015.md",
+      "path": "docs/research-notes/11_X5深度红外防伪候选_20261015.md",
+      "original_sha256": "2d041b0025830ebf69993b3b4af74ca2b3f7633e2454616c751c666676775dc7",
+      "published_sha256": "99e07502d75f998b15385ed8fe9e200b4454cd072ed6dbfe2583bd37f424bc39",
+      "adapted": true
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/D2_PAD_实物与真人首轮验证_20261015_1703.md",
+      "path": "docs/research-notes/D2_PAD_实物与真人首轮验证_20261015_1703.md",
+      "original_sha256": "a0d46036091de7716957001089d616b1c239b68c9287bcbe41a4edc17c6a5585",
+      "published_sha256": "0efeee849d8c021d73d2b09a8fc817d3f98772806301000640484c1d91265c8d",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_X5_20261015/models/manifest.json",
+      "path": "models/manifest.json",
+      "original_sha256": "473084b45c715a266efcd3695deebb083390bd980622d71f1631f9c5e70c67db",
+      "published_sha256": "473084b45c715a266efcd3695deebb083390bd980622d71f1631f9c5e70c67db",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_X5_20261015/models/face_detection_yunet.LICENSE",
+      "path": "models/face_detection_yunet.LICENSE",
+      "original_sha256": "c83b8120c50ccbd4c4f96edf53141bdd566ebb8f8e9227e415326aa1b1aba958",
+      "published_sha256": "c83b8120c50ccbd4c4f96edf53141bdd566ebb8f8e9227e415326aa1b1aba958",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_X5_20261015/models/face_recognition_sface.LICENSE",
+      "path": "models/face_recognition_sface.LICENSE",
+      "original_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "published_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "adapted": false
+    },
+    {
+      "source": "各模块资料/奥比中光D2蚂里奥3D结构光摄像头/SDK安装包_兼容性待验证/下载记录.json",
+      "path": "evidence/upstream-downloads.json",
+      "original_sha256": "4090ddf53e6c3a3406c1c8b21302abc7a900818f7df38553d47c3c9dc034aa8d",
+      "published_sha256": "d904e1919c6d233ba96815bfa420f113355b0ce90bb6170b2e0fba79f5fade6f",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/reverse_openni_findings.json",
+      "path": "evidence/windows-enumeration-findings.json",
+      "original_sha256": "edc92639a643f30479b5537e75247840b609bc96c4f3461c1fd053c1fc535817",
+      "published_sha256": "d378a099ca74a9333a5c6e19e9e010cfe5b8869ef3dcd7d8b3ac925e4a40a835",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/ruler_validation.json",
+      "path": "evidence/windows-ruler-validation.json",
+      "original_sha256": "f6af3c6a0f8251dc6ca86cb0e507b51d1b56a967fac57a3370e15389f26cb3c2",
+      "published_sha256": "1c7ab8d914e7a7790294510f6a5657f7e2d3646c2ad14a63d604540d7ef6ffdb",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/architecture/background_findings.json",
+      "path": "evidence/windows-background-findings.json",
+      "original_sha256": "45661baf8464bcad56238b4668730f354dd0421fdb46d05c02e9c0caf17b31e2",
+      "published_sha256": "d514d9b55e58df8bf9727fd0682f8b7f741b3839c82cc40e1db50a3399624e15",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/ir_metadata_analysis.json",
+      "path": "evidence/windows-ir-metadata-analysis.json",
+      "original_sha256": "4a7be2fc54cac926f8e58f0796c464da4ddcce79c178595978e7e92ae9e38d9f",
+      "published_sha256": "a4d2d07fc70a2e20e1ab8f235740f8933def1a8175276cad89b980832033290f",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/final_verification_20261015.json",
+      "path": "evidence/windows-final-verification.json",
+      "original_sha256": "1e044de3db5aad3659b9f3ae67010d0c7eeee16c49320c58f7bf54194daf0f36",
+      "published_sha256": "ba7989283db4a8710d0f596a0bdef4d6c77e2d55239d15f557e59affb65c04a6",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_X5_20261015/offline_sdk/arm64_layout.json",
+      "path": "evidence/arm64-layout.json",
+      "original_sha256": "d627075e03b7413c8271ab8b03fea0c089a481a8d2727d00fe233df967c91c3d",
+      "published_sha256": "90ed12c5ea8c53a792aed7ac25b0b022b7bcb8d72d1348cccfcaafc7e58f616a",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK适配_20261015/analysis/driver_findings.md",
+      "path": "docs/reverse-engineering/driver_findings.md",
+      "original_sha256": "d7564bf0db5986d781d2329ffa2460f059aff509d20fbbaeac8426d967b184ef",
+      "published_sha256": "3fb104f8c1d17226dead18d2445a32ae584bf644c9314f103f6011b645110ee3",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK适配_20261015/analysis/fps_queue_exposure_c62ea91f.md",
+      "path": "docs/reverse-engineering/fps_queue_exposure_c62ea91f.md",
+      "original_sha256": "16838dfe4c8627266d2a20b1fae75705b9f4f24ed8ecf249e8bbb56f7eae6cf1",
+      "published_sha256": "d99f0dbc6e865ad80f94f92e4bfa6cbe6978a67de1b6a4b51bf603ecf5a224ba",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK适配_20261015/analysis/hd_transport_8f4c2d1a.md",
+      "path": "docs/reverse-engineering/hd_transport_8f4c2d1a.md",
+      "original_sha256": "de1b9531551f16f8606e7e97abc980f772fbb67b82483dbc4cad94c0f0a21228",
+      "published_sha256": "d4a8d29e50f6f75d95a0cf37dc3275e560ad8cd456413ddbd8c1cf63c69f7c34",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK适配_20261015/analysis/ini_parser_43c98b7e.md",
+      "path": "docs/reverse-engineering/ini_parser_43c98b7e.md",
+      "original_sha256": "30f38d8e8d997de4742fe5bcd03de7418bf4c2da30a86fb8276144aefb184029",
+      "published_sha256": "2d2ac5e72073f38af7ea30024f01f185fcae8dac1e9ceaa17ba46680dbaf5f0e",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/CMakeLists.txt",
+      "path": "sdk/CMakeLists.txt",
+      "original_sha256": "e34fbec1283ba3ee4990f07f1f302c2dc31a9c0aa8ee814a48b70a2b4edafda7",
+      "published_sha256": "e34fbec1283ba3ee4990f07f1f302c2dc31a9c0aa8ee814a48b70a2b4edafda7",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/examples/capture.py",
+      "path": "sdk/examples/capture.py",
+      "original_sha256": "9734d77a982862ae50c271e29f4b4549196d3f4e4c8309cefba6edd1562a4982",
+      "published_sha256": "9734d77a982862ae50c271e29f4b4549196d3f4e4c8309cefba6edd1562a4982",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/include/d2sdk.h",
+      "path": "sdk/include/d2sdk.h",
+      "original_sha256": "86465140086aaf1adc981863368ef4a1bbcb0f32cd3e13229a6e0259ca7017ec",
+      "published_sha256": "86465140086aaf1adc981863368ef4a1bbcb0f32cd3e13229a6e0259ca7017ec",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/package.py",
+      "path": "sdk/package.py",
+      "original_sha256": "ed7581e9904bcb9762fed91e2564d7d064cfa949f33600bd5f57365cda8ff7d8",
+      "published_sha256": "ed7581e9904bcb9762fed91e2564d7d064cfa949f33600bd5f57365cda8ff7d8",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/README.md",
+      "path": "sdk/README.md",
+      "original_sha256": "e224f3d78cf4f712b78a886a5144dd6bb84561a2f0ce1a5da5233f6b1760a005",
+      "published_sha256": "078946040e7d7d2d2523e721b918d33498fb9a8b05b1bb1673190e8ff7487c6a",
+      "adapted": true
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/src/d2sdk.cpp",
+      "path": "sdk/src/d2sdk.cpp",
+      "original_sha256": "4973af258271a7565adfe973988170b3468dd0d23bacaab2643fb7adc52aadfb",
+      "published_sha256": "4973af258271a7565adfe973988170b3468dd0d23bacaab2643fb7adc52aadfb",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/src/frame.h",
+      "path": "sdk/src/frame.h",
+      "original_sha256": "6c92c7ab32c2d5226420c8c505016c4e178d5f0d7ee1afa936a2d207477b4159",
+      "published_sha256": "6c92c7ab32c2d5226420c8c505016c4e178d5f0d7ee1afa936a2d207477b4159",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/src/mode.h",
+      "path": "sdk/src/mode.h",
+      "original_sha256": "be2688901dcec1fd0ac007fe7474811a2bfc59d8ff901839fa2a9d7c90c28f2e",
+      "published_sha256": "be2688901dcec1fd0ac007fe7474811a2bfc59d8ff901839fa2a9d7c90c28f2e",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/tests/core_test.cpp",
+      "path": "sdk/tests/core_test.cpp",
+      "original_sha256": "89f2f159b394c97e2ac4055cbcff02a7033ce0b689d735b7a2f36488c61b51cd",
+      "published_sha256": "89f2f159b394c97e2ac4055cbcff02a7033ce0b689d735b7a2f36488c61b51cd",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/tests/test_package.py",
+      "path": "sdk/tests/test_package.py",
+      "original_sha256": "7f973c83ebf1f5da054e8345ca711c47a7def8ef52207ec90051d19fac6f5d46",
+      "published_sha256": "7f973c83ebf1f5da054e8345ca711c47a7def8ef52207ec90051d19fac6f5d46",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2_SDK应用_20261015/d2-sdk-v0.2.0-final-source.tar.gz#source/tools/d2_probe.cpp",
+      "path": "sdk/tools/d2_probe.cpp",
+      "original_sha256": "c403f400f882e8d5d3c1cdef3e33a722f0e03d2d8c91004ee8893c979ec71c3c",
+      "published_sha256": "c403f400f882e8d5d3c1cdef3e33a722f0e03d2d8c91004ee8893c979ec71c3c",
+      "adapted": false
+    },
+    {
+      "source": "测试/D2相机_20261014/hello_research/driver/stub/D2CameraStub.c",
+      "path": "windows/media-source/stub/D2CameraStub.c",
+      "original_sha256": "2d5d39c41745fcf335776dba92b01c29b242bd55b3e474abe4201fea47cdc84e",
+      "published_sha256": "2d5d39c41745fcf335776dba92b01c29b242bd55b3e474abe4201fea47cdc84e",
+      "adapted": false
+    }
+  ],
+  "excluded": "See docs/source-inventory.md; no real templates, camera images, credentials or vendor binaries"
+}

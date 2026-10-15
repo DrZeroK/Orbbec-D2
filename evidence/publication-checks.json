@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-16",
+  "environment": {
+    "host": "Windows x64",
+    "offline_python_tests": "WSL Ubuntu 22.04.5 / Python 3.10.12",
+    "opencv": "4.11.0",
+    "numpy": "1.26.4",
+    "aiohttp": "3.14.5"
+  },
+  "python_unit_tests": {
+    "sdk_package": 2,
+    "rgb_pin_pairing_geometry_preview": 40,
+    "calibration": 10,
+    "experimental_ir": 12,
+    "model_downloader": 3,
+    "total": 65,
+    "passed": 65,
+    "skipped": 0
+  },
+  "self_checks": {
+    "timing_assertions": 7,
+    "factory_decode_assertions": 4,
+    "hardware_access": false
+  },
+  "native_cpp_contract": {
+    "compiler": "g++ C++17 on WSL x86_64",
+    "passed": true,
+    "note": "Frame/mode math only; ARM64 runtime not rebuilt on this x86_64 host"
+  },
+  "windows_build": {
+    "passed": true,
+    "components": [
+      "D2MediaSource.dll",
+      "test_capture.exe",
+      "test_consumer.exe",
+      "test_activate.exe",
+      "test_source_reader.exe",
+      "virtual_camera_probe.exe",
+      "test_background.exe"
+    ],
+    "warnings": "Two existing signed/unsigned conversion warnings in test/probe consumers",
+    "camera_access": false,
+    "system_registration": false,
+    "wdk_stub_built": false
+  },
+  "not_performed": [
+    "New physical camera acceptance",
+    "Windows Hello login",
+    "Production depth/IR anti-spoof acceptance",
+    "Original whole-wheelchair HTTP/UI integration tests",
+    "Cloud GitHub Actions execution before upload"
+  ],
+  "security_review": {
+    "real_templates": false,
+    "pin_records": false,
+    "camera_images": false,
+    "actual_serials": false,
+    "private_endpoints": false,
+    "vendor_binaries": false
+  },
+  "notes": "Historical hardware acceptance is separately documented in hardware-summary.json. No X5 service was changed."
+}

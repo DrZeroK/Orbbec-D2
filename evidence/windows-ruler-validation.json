@@ -1,0 +1,41 @@
+[
+  {
+    "evidence": "depth_20261014_230849_941367",
+    "ruler_mm": 570,
+    "frames": 300,
+    "median_mm": 571,
+    "min_mm": 571,
+    "max_mm": 571,
+    "median_error_mm": 1,
+    "elapsed_s": 10.031999999999925,
+    "nominal_range": true,
+    "center_nonzero_fraction_min": 1,
+    "interpretation": "Two-point ruler check; not laboratory calibration"
+  },
+  {
+    "evidence": "depth_20261014_231122_866859",
+    "ruler_mm": 1670,
+    "frames": 90,
+    "median_mm": 182,
+    "min_mm": 182,
+    "max_mm": 182,
+    "median_error_mm": -1488,
+    "elapsed_s": 3.061999999999898,
+    "nominal_range": false,
+    "center_nonzero_fraction_min": 1,
+    "interpretation": "Outside specified range; returned value is erroneous"
+  },
+  {
+    "evidence": "depth_20261014_231638_230547",
+    "ruler_mm": 1000,
+    "frames": 300,
+    "median_mm": 998,
+    "min_mm": 993,
+    "max_mm": 998,
+    "median_error_mm": -2,
+    "elapsed_s": 10.030999999999949,
+    "nominal_range": true,
+    "center_nonzero_fraction_min": 0.673469387755102,
+    "interpretation": "Two-point ruler check; not laboratory calibration"
+  }
+]

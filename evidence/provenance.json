@@ -1,7 +1,7 @@
 {
   "schema": "d2-public-source-provenance/1",
   "date": "2026-10-16",
-  "hash_convention": "SHA256 of curated checkout bytes; .cmd uses CRLF via .gitattributes; other text LF",
+  "hash_convention": "SHA256 of curated checkout bytes; .cmd retains CRLF (-text in .gitattributes), other text LF",
   "license_scope": "Root MIT covers own work only; see THIRD_PARTY_NOTICES.md",
   "files": [
     {
